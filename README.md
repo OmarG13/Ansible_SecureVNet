@@ -3,7 +3,7 @@ Ansible deployed secure Virtual Network
 
 The files in this repository were used to configure the network depicted below.
 
-https://drive.google.com/file/d/14VHYIsVmAfJzcHqwDtnHw9P0yB5WS5bV/view?usp=sharing
+https://github.com/OmarG13/Ansible_SecureVNet_with_ElkStack/blob/main/Diagrams/Elk%20integration%20into%20Secure%20VM%20Diagram.png?raw=true
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the 3-elk-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -67,7 +67,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://drive.google.com/file/d/1H55LXU3TIdEeCcc1yfDg0N_Bq6TRO4la/view?usp=sharing
+https://github.com/OmarG13/Ansible_SecureVNet_with_ElkStack/blob/main/Diagrams/Elk%20Docker.PNG?raw=true
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
