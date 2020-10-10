@@ -1,0 +1,22 @@
+---
+- name: installing and launching auditbeat
+  hosts: webservers
+  become: yes
+  tasks:
+
+  - name: download auditbeat deb
+    command: curl -L -O curl -L -O https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.6.1-amd64.deb
+ 
+  - name: install auditbeat deb
+    command: sudo dpkg -i auditbeat-7.6.1-amd64.deb
+
+  - name: drop in auditbeat.yml 
+    copy:
+      src: /etc/ansible/auditbeat-config.yml
+      dest: /etc/auditbeat/auditbeat.yml
+
+  - name: setup auditbeat
+    command: sudo auditbeat setup
+
+  - name: start auditbeat service
+    command: sudo service auditbeat start
