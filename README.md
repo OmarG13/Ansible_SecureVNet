@@ -93,13 +93,13 @@ SSH into the control node (Jump Box) and follow the steps below:
 - Update the yaml playbook 3-elk-playbook.yml file to include the correct target machines.
 - Run the playbook, and navigate to http://{Elk virtual machine public IP}:5601 to check that the installation worked as expected.
 
-* - ssh username@{Jump Box public IP}
-* - sudo docker container list -a
-* - sudo docker start {ansible container ID}
-* - sudo docker attach {ansible container ID}
-* - cd /etc/ansible/
-* - nano elkplaybook.yml
+* ssh username@{Jump Box public IP}
+* sudo docker container list -a
+* sudo docker start {ansible container ID}
+* sudo docker attach {ansible container ID}
+* cd /etc/ansible/
+* nano elkplaybook.yml
 * copy the contents of 3-elk-playbook.yml into the file 
 * update the "hosts:" section to indicate the target machine(s)
 * save and close the yaml file
-* - ansible-playbook elkplaybook.yml
+* ansible-playbook elkplaybook.yml
