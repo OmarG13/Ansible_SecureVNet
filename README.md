@@ -89,8 +89,8 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned (if not, please look into the Linux folder and read the file install Ansible): 
 
 SSH into the control node (Jump Box) and follow the steps below:
-- Copy the contents of the yaml playbook 3-elk-playbook.yml file to the Ansible control node on Jump Box.
-- Update the yaml playbook 3-elk-playbook.yml file to include the correct target machines.
+- Copy the contents of the yaml playbook elk-playbook.yml file to the Ansible control node on Jump Box.
+- Update the yaml playbook elk-playbook.yml file to include the correct target machines.
 - Run the playbook, and navigate to http://{Elk virtual machine public IP}:5601 to check that the installation worked as expected.
 
 Use the below commands:
@@ -100,10 +100,10 @@ sudo docker container list -a
 sudo docker start {ansible container ID}
 sudo docker attach {ansible container ID}
 cd /etc/ansible/
-nano elkplaybook.yml
+nano elkplaybook_{name}.yml
 ```
-* copy/paste the contents of 3-elk-playbook.yml into the newly created elkplaybook.yml
-* update the "hosts:" section of elkplaybook.yml to indicate the target machine(s)
+* copy/paste the contents of elk-playbook.yml into the newly created elkplaybook_{name}.yml
+* update the "hosts:" section of elkplaybook_{name}.yml to indicate the target machine(s)
 * save and close the yaml file
 ```
 ansible-playbook elkplaybook.yml
