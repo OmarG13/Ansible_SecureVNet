@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 
 <img src="https://github.com/OmarG13/Ansible_SecureVNet_with_ElkStack/blob/main/Diagrams/Elk%20integration%20into%20Secure%20VM%20Diagram.png?raw=true">
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the 3-elk-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the elk-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
